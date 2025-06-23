@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=340, initial-scale=1.0" />
+    <title>Meet Our Team</title>
+    <script>
+    window.onload = function() {
+        alert("Welcome! Please let us know if you need any accessibility assistance.");
+    };
+</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+        header {
+            background: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        main {
+            max-width: 340px;
+            margin: 0 auto;
+            padding: 0.5em;
+        }
+        #teamdisplay {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+        .team-member {
+            background: #004080;
+            color: #fff;
+            border-radius: 8px;
+            padding: 1em;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 0.5em;
+        }
+        @media (max-width: 340px) {
+            main {
+                padding: 0.2em;
+            }
+            .team-member {
+                padding: 0.5em;
+            }
+            .team-member img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <h1>Meet Our Team</h1>
+    </header>
+    <main role="main">
+        <div id="teamdisplay">
+            <div class="team-member">
+                <h2>Sarah Lee</h2>
+                <img src="istockphoto-1362265242-612x612.jpg" alt="Sarah Lee" />
+                <p><strong>Department:</strong> Sales</p>
+                <p><strong>Title:</strong> Senior Agent</p>
+                <p>Experienced in luxury homes and client relations.</p>
+                <p><a href="mailto:SarahLee@Realtor.com">SarahLee@Realtor.com</a></p>
+            </div>
+            <div class="team-member">
+                <h2>John Fergunson</h2>
+                <img src="istockphoto-1367391515-612x612.jpg" alt="John Fergunson" />
+                <p><strong>Department:</strong> Marketing</p>
+                <p><strong>Title:</strong> Marketing Specialist</p>
+                <p>Creates strategies to boost property visibility online.</p>
+                <p><a href="mailto:johnF@Realtor.com">johnF@Realtor.com</a></p>
+            </div>
+            <div class="team-member">
+                <h2>Emily Johnson</h2>
+                <img src="female-headshot_real-estate-headshots-800x534.jpg" alt="Emily Johnson" />
+                <p><strong>Department:</strong> Administration</p>
+                <p><strong>Title:</strong> Office Manager</p>
+                <p>Ensures smooth operations across all departments.</p>
+                <p><a href="mailto:emilyJ@Realtor.com">emilyJ@Realtor.com</a></p>
+            </div>
+            <div class="team-member">
+                <h2>Michael Jordan III</h2>
+                <img src="medium-shot-man-working-as-real-estate-agent_23-2151064826.avif" alt="Michael Jordan" />
+                <p><strong>Department:</strong> Legal</p>
+                <p><strong>Title:</strong> Legal Advisor</p>
+                <p>Handles contracts and ensures legal compliance.</p>
+                <p><a href="mailto:michaelJ@Realtor.com">michaelJ@Realtor.com</a></p>
+            </div>
+        </div>
+    </main>
+    <footer role="contentinfo">
+       
+    </footer>
+</body>
+</html>
